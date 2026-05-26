@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>主要メーカー 価格改定のお知らせ（2026年4月〜8月実施）</title>
+<meta name="description" content="ケーイーアイ・アスカ・東北花材・ホワイエ・大地農園・友膳・フロールエバー・肥田電器 各社の2026年価格改定実施日と対象品番一覧（PDFダウンロード対応）">
+<style>
+  html { background: #fff; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 18px 18px 40px;
+    color: #1a1a1a;
+    line-height: 1.85;
+    background: #fff;
+  }
+  h1 {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.55;
+    color: #111;
+    text-align: center;
+    padding: 18px 12px 16px;
+    margin: 6px 0 18px;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    letter-spacing: 0.06em;
+  }
+  h2 {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-size: 17.5px;
+    font-weight: 600;
+    color: #111;
+    border-left: 4px solid #333;
+    padding: 3px 0 3px 12px;
+    margin: 32px 0 14px;
+    letter-spacing: 0.04em;
+    line-height: 1.55;
+  }
+  p { margin: 0 0 14px; }
+  .lead {
+    background: #f5f5f5;
+    border-left: 3px solid #555;
+    padding: 14px 16px;
+    margin: 18px 0 26px;
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: #1a1a1a;
+  }
+  .lead strong { color: #000; font-weight: 700; }
+
+  /* === タイムライン (改定日順カード) === */
+  .timeline { margin: 18px 0 28px; }
+  .card {
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin: 0 0 14px;
+    background: #fff;
+    transition: border-color .12s ease, box-shadow .12s ease;
+  }
+  .card:hover { border-color: #888; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 6px;
+    border-bottom: 0.5px solid #eaeaea;
+    padding-bottom: 8px;
+  }
+  .card-supplier {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: 0.03em;
+  }
+  .card-supplier .en {
+    color: #666;
+    font-size: 11px;
+    margin-left: 6px;
+    letter-spacing: 0.08em;
+  }
+  .card-date {
+    font-size: 13.5px;
+    color: #000;
+    font-weight: 700;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+  }
+  .card-date .label { color: #888; font-size: 11px; font-weight: 400; margin-right: 4px; }
+  .card-meta {
+    font-size: 12.5px;
+    color: #555;
+    margin: 4px 0 12px;
+    line-height: 1.6;
+  }
+  .card-meta .count { color: #111; font-weight: 600; }
+  .card-actions { text-align: right; }
+
+  /* === PDF ボタン（カード内・小） === */
+  .pdf-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #2a2a2a;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    border-radius: 6px;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.18);
+    transition: background .12s ease, transform .08s ease;
+  }
+  .pdf-btn:hover { background: #111; }
+  .pdf-btn:active { transform: translateY(1px); }
+  .pdf-btn::before { content: "PDF"; margin-right: 8px; font-size: 10.5px; font-weight: 700; opacity: 0.7; letter-spacing: 0.08em; }
+
+  /* === 注意書き === */
+  .notes {
+    margin-top: 30px;
+    padding: 14px 16px;
+    background: #f5f5f5;
+    border: 0.5px solid #d8d8d8;
+    border-radius: 4px;
+    font-size: 12.5px;
+    line-height: 1.75;
+    color: #333;
+  }
+  .notes h3 {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    margin: 0 0 8px;
+    letter-spacing: 0.04em;
+  }
+  .notes ul { margin: 0; padding-left: 20px; }
+  .notes li { margin: 2px 0; }
+  .notes strong { color: #000; }
+
+  /* === 問い合わせ === */
+  .contact {
+    margin-top: 30px;
+    padding: 18px;
+    text-align: center;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    color: #111;
+  }
+  .contact .heading {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+  }
+  .contact a {
+    color: #000 !important;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 14px 12px 30px; }
+    h1 { font-size: 18px; }
+    .card-supplier { font-size: 15px; }
+    .card-date { font-size: 12.5px; }
+    .card-head { flex-direction: column; align-items: flex-start; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>主要メーカー 価格改定のお知らせ<br><span style="font-size:14px; font-weight:400; letter-spacing:0.04em;">— 2026年4月〜8月 実施分 —</span></h1>
+
+<p>平素より格別のお引き立てを賜り、誠にありがとうございます。</p>
+
+<p>このたび、弊社取り扱いの主要メーカー各社より、製造原価および物流費の高騰を受け、製品価格改定の通知を受領いたしました。お客様には何卒ご理解を賜りたく、各社の改定実施日および対象品番一覧（PDF）を以下のとおりご案内申し上げます。</p>
+
+<div class="lead">
+改定実施日は <strong>2026年4月30日（ケーイーアイ）</strong> を皮切りに <strong>2026年8月1日（肥田電器）</strong> まで順次実施されます。改定後の価格は各社の正規価格表に従い、ご注文時に適用されます。<br>
+ご発注のお見通しを立てやすいよう、対象品番一覧を PDF にてご用意いたしました。価格はすべて税抜表示です。
+</div>
+
+<h2>改定実施日順 一覧</h2>
+
+<div class="timeline">
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-supplier">ケーイーアイ <span class="en">KEI</span></div>
+      <div class="card-date"><span class="label">改定日</span>2026年4月30日</div>
+    </div>
+    <div class="card-meta">2026年4月30日 18:00〜実施 ／ 対象 <span class="count">95</span> 品番</div>
+    <div class="card-actions"><a class="pdf-btn" href="pdfs/kee_20260430_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-supplier">アスカ <span class="en">ASKA</span></div>
+      <div class="card-date"><span class="label">改定日</span>2026年5月15日</div>
+    </div>
+    <div class="card-meta">2026年5月15日（金）出荷分（予約含む）より ／ 対象 <span class="count">45</span> 品番</div>
+    <div class="card-actions"><a class="pdf-btn" href="pdfs/asc_20260515_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-supplier">東北花材 <span class="en">TOHOKU KAZAI</span></div>
+      <div class="card-date"><span class="label">改定日</span>2026年6月1日</div>
+    </div>
+    <div class="card-meta">2026年6月1日 ご出荷分より ／ 対象 <span class="count">103</span> 品番</div>
+    <div class="card-actions"><a class="pdf-btn" href="pdfs/thk_20260601_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-supplier">ホワイエ <span class="en">FOYER</span></div>
+      <div class="card-date"><span class="label">改定日</span>2026年7月1日</div>
+    </div>
+    <div class="card-meta">2026年7月1日 ご出荷分より ／ 対象 <span class="count">290</span> 品番</div>
+    <div class="card-actions"><a class="pdf-btn" href="pdfs/foy_20260701_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-supplier">大地農園 <span class="en">EARTH MATTERS</span></div>
+      <div class="card-date"><span class="label">改定日</span>2026年7月1日</div>
+    </div>
+    <div class="card-meta">2026年7月1日 価格改定 ／ 対象品番一覧は <span class="count">2 種類</span>（JAN付き商品 1,045 品番 ／ セール対象商品 14 品番）</div>
+    <div class="card-actions" style="display:flex; justify-content:flex-end; gap:8px; flex-wrap:wrap;">
+      <a class="pdf-btn" href="pdfs/emt_20260701_pricelist_jan.pdf" target="_blank" rel="noopener">JAN付き商品（PDF）</a>
+      <a class="pdf-btn" href="pdfs/emt_20260701_pricelist_sale.pdf" target="_blank" rel="noopener">セール対象商品（PDF）</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-supplier">友膳 <span class="en">YUZEN</span></div>
+      <div class="card-date"><span class="label">改定日</span>2026年7月1日</div>
+    </div>
+    <div class="card-meta">2026年7月1日 ご出荷分より ／ 対象 <span class="count">226</span> 品番</div>
+    <div class="card-actions"><a class="pdf-btn" href="pdfs/yzn_20260701_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-supplier">フロールエバー <span class="en">FLOR EVER</span></div>
+      <div class="card-date"><span class="label">改定日</span>2026年7月1日</div>
+    </div>
+    <div class="card-meta">2026年7月1日 ご出荷分より ／ 対象 <span class="count">26</span> 品番</div>
+    <div class="card-actions"><a class="pdf-btn" href="pdfs/fle_20260701_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-supplier">肥田電器 <span class="en">HIDA</span></div>
+      <div class="card-date"><span class="label">改定日</span>2026年8月1日</div>
+    </div>
+    <div class="card-meta">2026年8月1日 ご出荷分より ／ 対象 <span class="count">36</span> 品番</div>
+    <div class="card-actions"><a class="pdf-btn" href="pdfs/hda_20260801_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
+  </div>
+
+</div>
+
+<div class="notes">
+<h3>ご注意事項</h3>
+<ul>
+  <li>本一覧は弊社が各メーカーより受領した改定通知に基づき作成しております。最終的な価格・改定日は各メーカーの正規通知が優先されます。</li>
+  <li>PDF 記載の価格はすべて<strong>税抜価格</strong>です。</li>
+  <li>改定実施日以降のご出荷分から新価格が適用されます（メーカーにより「予約含む」運用が異なるため、PDF 注記をご確認ください）。</li>
+  <li>掲載品番以外にも順次改定が発表される場合がございます。最新情報はお問い合わせください。</li>
+</ul>
+</div>
+
+<div class="contact">
+<div class="heading">ご不明な点・ご注文に関するお問い合わせ</div>
+<p style="margin:0; font-size:13.5px;">公式 LINE よりお気軽にご連絡ください。</p>
+<p style="margin:8px 0 0;"><a href="https://lin.ee/v4E9XHO" target="_blank" rel="noopener">神戸リボン公式 LINE に問い合わせる</a></p>
+</div>
+
+</body>
+</html>
