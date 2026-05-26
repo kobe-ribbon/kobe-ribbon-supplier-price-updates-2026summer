@@ -12,7 +12,7 @@
     max-width: 860px;
     margin: 0 auto;
     padding: 18px 18px 40px;
-    color: #2a2520;
+    color: #1a1a1a;
     line-height: 1.85;
     background: #fff;
   }
@@ -21,20 +21,20 @@
     font-size: 22px;
     font-weight: 600;
     line-height: 1.55;
-    color: #3a2a14;
+    color: #111;
     text-align: center;
     padding: 18px 12px 16px;
     margin: 6px 0 18px;
-    border-top: 1px solid #c9a96b;
-    border-bottom: 1px solid #c9a96b;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
     letter-spacing: 0.06em;
   }
   h2 {
     font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
     font-size: 17.5px;
     font-weight: 600;
-    color: #4a3818;
-    border-left: 4px solid #b08442;
+    color: #111;
+    border-left: 4px solid #333;
     padding: 3px 0 3px 12px;
     margin: 32px 0 14px;
     letter-spacing: 0.04em;
@@ -42,27 +42,27 @@
   }
   p { margin: 0 0 14px; }
   .lead {
-    background: #fbf8f1;
-    border-left: 3px solid #c9a96b;
+    background: #f5f5f5;
+    border-left: 3px solid #555;
     padding: 14px 16px;
     margin: 18px 0 26px;
     font-size: 14.5px;
     line-height: 1.85;
-    color: #3a2a14;
+    color: #1a1a1a;
   }
-  .lead strong { color: #c8161d; font-weight: 600; }
+  .lead strong { color: #000; font-weight: 700; }
 
   /* === タイムライン (改定日順カード) === */
   .timeline { margin: 18px 0 28px; }
   .card {
-    border: 1px solid #e5dccb;
+    border: 1px solid #d8d8d8;
     border-radius: 6px;
     padding: 16px 18px;
     margin: 0 0 14px;
     background: #fff;
     transition: border-color .12s ease, box-shadow .12s ease;
   }
-  .card:hover { border-color: #c9a96b; box-shadow: 0 2px 6px rgba(176,132,66,0.08); }
+  .card:hover { border-color: #888; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
   .card-head {
     display: flex;
     justify-content: space-between;
@@ -70,88 +70,89 @@
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 6px;
-    border-bottom: 0.5px solid #f0e6d0;
+    border-bottom: 0.5px solid #eaeaea;
     padding-bottom: 8px;
   }
   .card-supplier {
     font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
     font-size: 16.5px;
     font-weight: 600;
-    color: #3a2a14;
+    color: #111;
     letter-spacing: 0.03em;
   }
   .card-supplier .en {
-    color: #946d31;
+    color: #666;
     font-size: 11px;
     margin-left: 6px;
     letter-spacing: 0.08em;
   }
   .card-date {
     font-size: 13.5px;
-    color: #c8161d;
-    font-weight: 600;
+    color: #000;
+    font-weight: 700;
     white-space: nowrap;
     letter-spacing: 0.02em;
   }
-  .card-date .label { color: #6a5a40; font-size: 11px; font-weight: 400; margin-right: 4px; }
+  .card-date .label { color: #888; font-size: 11px; font-weight: 400; margin-right: 4px; }
   .card-meta {
     font-size: 12.5px;
-    color: #6a5a40;
+    color: #555;
     margin: 4px 0 12px;
     line-height: 1.6;
   }
-  .card-meta .count { color: #4a3818; font-weight: 600; }
+  .card-meta .count { color: #111; font-weight: 600; }
   .card-actions { text-align: right; }
 
   /* === PDF ボタン（カード内・小） === */
   .pdf-btn {
     display: inline-block;
     padding: 8px 18px;
-    background: #b08442;
+    background: #2a2a2a;
     color: #fff !important;
     text-decoration: none !important;
     font-weight: 600;
     font-size: 12.5px;
     letter-spacing: 0.04em;
     border-radius: 6px;
-    border: 1px solid #946d31;
-    box-shadow: 0 1px 3px rgba(176,132,66,0.22);
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.18);
     transition: background .12s ease, transform .08s ease;
   }
-  .pdf-btn:hover { background: #946d31; }
+  .pdf-btn:hover { background: #111; }
   .pdf-btn:active { transform: translateY(1px); }
-  .pdf-btn::before { content: "📄"; margin-right: 6px; font-size: 12px; }
+  .pdf-btn::before { content: "PDF"; margin-right: 8px; font-size: 10.5px; font-weight: 700; opacity: 0.7; letter-spacing: 0.08em; }
 
   /* === 注意書き === */
   .notes {
     margin-top: 30px;
     padding: 14px 16px;
-    background: #fbf8f1;
-    border: 0.5px solid #e5dccb;
+    background: #f5f5f5;
+    border: 0.5px solid #d8d8d8;
     border-radius: 4px;
     font-size: 12.5px;
     line-height: 1.75;
-    color: #4a3818;
+    color: #333;
   }
   .notes h3 {
     font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
     font-size: 14px;
     font-weight: 600;
-    color: #3a2a14;
+    color: #111;
     margin: 0 0 8px;
     letter-spacing: 0.04em;
   }
   .notes ul { margin: 0; padding-left: 20px; }
   .notes li { margin: 2px 0; }
+  .notes strong { color: #000; }
 
   /* === 問い合わせ === */
   .contact {
     margin-top: 30px;
     padding: 18px;
     text-align: center;
-    border-top: 1px solid #c9a96b;
-    border-bottom: 1px solid #c9a96b;
-    color: #3a2a14;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    color: #111;
   }
   .contact .heading {
     font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
@@ -161,10 +162,10 @@
     letter-spacing: 0.04em;
   }
   .contact a {
-    color: #06c755 !important;
+    color: #000 !important;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid #06c755;
+    border-bottom: 1px solid #000;
   }
 
   @media (max-width: 600px) {
@@ -283,7 +284,7 @@
 <div class="contact">
 <div class="heading">ご不明な点・ご注文に関するお問い合わせ</div>
 <p style="margin:0; font-size:13.5px;">公式 LINE よりお気軽にご連絡ください。</p>
-<p style="margin:8px 0 0;"><a href="https://lin.ee/v4E9XHO" target="_blank" rel="noopener">▶ 神戸リボン公式 LINE に問い合わせる</a></p>
+<p style="margin:8px 0 0;"><a href="https://lin.ee/v4E9XHO" target="_blank" rel="noopener">神戸リボン公式 LINE に問い合わせる</a></p>
 </div>
 
 </body>
