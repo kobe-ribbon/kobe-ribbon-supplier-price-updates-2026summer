@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>【大地農園 7月1日改定】主要メーカー9社 価格改定のご案内</title>
-<meta name="description" content="大地農園（2026年7月1日改定／1,059品番）ほか主要メーカー9社（ケーイーアイ・アスカ・東北花材・ホワイエ・友膳・フロールエバー・肥田電器・パセオ）の価格改定実施日と対象品番一覧（PDFダウンロード対応）">
+<title>【大地農園 7月1日改定】主要メーカー各社 価格改定のご案内</title>
+<meta name="description" content="大地農園（2026年7月1日改定／1,059品番）ほか主要メーカー各社（ケーイーアイ・アスカ・東北花材・ホワイエ・友膳・フロールエバー・肥田電器・パセオ）の価格改定実施日と対象品番一覧（PDFダウンロード対応）">
 <style>
   html { background: #fff; }
   body {
@@ -122,6 +122,50 @@
   .pdf-btn:active { transform: translateY(1px); }
   .pdf-btn::before { content: "PDF"; margin-right: 8px; font-size: 10.5px; font-weight: 700; opacity: 0.7; letter-spacing: 0.08em; }
 
+  /* === 記事リンクボタン（PDF以外のカード用） === */
+  .article-link-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #2a2a2a;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    border-radius: 6px;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.18);
+    transition: background .12s ease, transform .08s ease;
+  }
+  .article-link-btn:hover { background: #111; }
+  .article-link-btn:active { transform: translateY(1px); }
+  .article-link-btn::before { content: "詳細"; margin-right: 8px; font-size: 10.5px; font-weight: 700; opacity: 0.7; letter-spacing: 0.08em; }
+
+  /* === 改定済み (is-past) 状態：改定日が今日以前 === */
+  .card.is-past { background: #f7f7f7; }
+  .card.is-past:hover { box-shadow: none; border-color: #d8d8d8; }
+  .card.is-past .card-supplier { color: #666; }
+  .card.is-past .card-date { color: #666; }
+  .card.is-past .card-meta { color: #888; }
+  .card.is-past .card-date::after {
+    content: "改定済み";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    background: #555;
+    color: #fff;
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    border-radius: 2px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .card.is-past .pdf-btn,
+  .card.is-past .article-link-btn { background: #777; border-color: #555; box-shadow: none; }
+  .card.is-past .pdf-btn:hover,
+  .card.is-past .article-link-btn:hover { background: #555; }
+
   /* === 注意書き === */
   .notes {
     margin-top: 30px;
@@ -179,7 +223,7 @@
 </head>
 <body>
 
-<h1>【大地農園 7月1日改定】<br>主要メーカー9社 価格改定のご案内<br><span style="font-size:14px; font-weight:400; letter-spacing:0.04em;">— 2026年4月〜8月 実施分 —</span></h1>
+<h1>【大地農園 7月1日改定】<br>主要メーカー各社 価格改定のご案内<br><span style="font-size:14px; font-weight:400; letter-spacing:0.04em;">— 2026年4月〜8月 実施分 —</span></h1>
 
 <p>平素より格別のお引き立てを賜り、誠にありがとうございます。</p>
 
@@ -194,7 +238,7 @@
 
 <div class="timeline">
 
-  <div class="card">
+  <div class="card" data-effective-date="2026-04-30">
     <div class="card-head">
       <div class="card-supplier">ケーイーアイ <span class="en">KEI</span></div>
       <div class="card-date"><span class="label">改定日</span>2026年4月30日</div>
@@ -203,7 +247,7 @@
     <div class="card-actions"><a class="pdf-btn" href="pdfs/kee_20260430_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
   </div>
 
-  <div class="card">
+  <div class="card" data-effective-date="2026-05-15">
     <div class="card-head">
       <div class="card-supplier">アスカ <span class="en">ASKA</span></div>
       <div class="card-date"><span class="label">改定日</span>2026年5月15日</div>
@@ -212,7 +256,7 @@
     <div class="card-actions"><a class="pdf-btn" href="pdfs/asc_20260515_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
   </div>
 
-  <div class="card">
+  <div class="card" data-effective-date="2026-06-01">
     <div class="card-head">
       <div class="card-supplier">東北花材 <span class="en">TOHOKU KAZAI</span></div>
       <div class="card-date"><span class="label">改定日</span>2026年6月1日</div>
@@ -221,7 +265,16 @@
     <div class="card-actions"><a class="pdf-btn" href="pdfs/thk_20260601_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
   </div>
 
-  <div class="card">
+  <div class="card" data-effective-date="2026-06-21">
+    <div class="card-head">
+      <div class="card-supplier">星野株式会社 <span class="en">HOSHINO</span></div>
+      <div class="card-date"><span class="label">改定日</span>2026年6月21日</div>
+    </div>
+    <div class="card-meta">2026年6月21日（日）受注分より ／ WRAPPING・CARRY BAG・リボン他 主要カテゴリ全体（紙製品 10%以上 ／ フィルム製品 20%以上）／ 色見本ページから一括発注可</div>
+    <div class="card-actions"><a class="article-link-btn" href="https://kobe-ribbon.github.io/kobe-ribbon-hoshino-2026-price-update/" target="_blank" rel="noopener">詳細・色見本ページを見る</a></div>
+  </div>
+
+  <div class="card" data-effective-date="2026-07-01">
     <div class="card-head">
       <div class="card-supplier">ホワイエ <span class="en">FOYER</span></div>
       <div class="card-date"><span class="label">改定日</span>2026年7月1日</div>
@@ -230,7 +283,7 @@
     <div class="card-actions"><a class="pdf-btn" href="pdfs/foy_20260701_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
   </div>
 
-  <div class="card">
+  <div class="card" data-effective-date="2026-07-01">
     <div class="card-head">
       <div class="card-supplier">大地農園 <span class="en">EARTH MATTERS</span></div>
       <div class="card-date"><span class="label">改定日</span>2026年7月1日</div>
@@ -242,7 +295,7 @@
     </div>
   </div>
 
-  <div class="card">
+  <div class="card" data-effective-date="2026-07-01">
     <div class="card-head">
       <div class="card-supplier">友膳 <span class="en">YUZEN</span></div>
       <div class="card-date"><span class="label">改定日</span>2026年7月1日</div>
@@ -251,7 +304,7 @@
     <div class="card-actions"><a class="pdf-btn" href="pdfs/yzn_20260701_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
   </div>
 
-  <div class="card">
+  <div class="card" data-effective-date="2026-07-01">
     <div class="card-head">
       <div class="card-supplier">フロールエバー <span class="en">FLOR EVER</span></div>
       <div class="card-date"><span class="label">改定日</span>2026年7月1日</div>
@@ -260,7 +313,7 @@
     <div class="card-actions"><a class="pdf-btn" href="pdfs/fle_20260701_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
   </div>
 
-  <div class="card">
+  <div class="card" data-effective-date="2026-08-01">
     <div class="card-head">
       <div class="card-supplier">肥田電器 <span class="en">HIDA</span></div>
       <div class="card-date"><span class="label">改定日</span>2026年8月1日</div>
@@ -269,7 +322,7 @@
     <div class="card-actions"><a class="pdf-btn" href="pdfs/hda_20260801_pricelist.pdf" target="_blank" rel="noopener">対象品番一覧（PDF）</a></div>
   </div>
 
-  <div class="card">
+  <div class="card" data-effective-date="2026-08-01">
     <div class="card-head">
       <div class="card-supplier">パセオ <span class="en">PASEO</span></div>
       <div class="card-date"><span class="label">改定日</span>2026年8月1日</div>
@@ -299,6 +352,20 @@
 <p style="margin:0; font-size:13.5px;">公式 LINE よりお気軽にご連絡ください。</p>
 <p style="margin:8px 0 0;"><a href="https://lin.ee/v4E9XHO" target="_blank" rel="noopener">神戸リボン公式 LINE に問い合わせる</a></p>
 </div>
+
+<script>
+  (function() {
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    document.querySelectorAll('.card[data-effective-date]').forEach(function(card) {
+      var dateStr = card.getAttribute('data-effective-date');
+      var d = new Date(dateStr + 'T00:00:00');
+      if (!isNaN(d.getTime()) && today >= d) {
+        card.classList.add('is-past');
+      }
+    });
+  })();
+</script>
 
 </body>
 </html>
