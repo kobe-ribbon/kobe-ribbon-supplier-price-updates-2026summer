@@ -189,6 +189,57 @@
   .notes li { margin: 2px 0; }
   .notes strong { color: #000; }
 
+  /* === 関連記事カード === */
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+    margin: 18px 0 28px;
+  }
+  .related-card {
+    display: block;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    padding: 16px 18px;
+    background: #fff;
+    text-decoration: none !important;
+    color: #1a1a1a !important;
+    transition: border-color .12s ease, box-shadow .12s ease, transform .08s ease;
+  }
+  .related-card:hover { border-color: #888; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+  .related-card:active { transform: translateY(1px); }
+  .related-label {
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    color: #888;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .related-title {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-size: 14.5px;
+    font-weight: 600;
+    line-height: 1.55;
+    color: #111;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+  }
+  .related-meta {
+    font-size: 12.5px;
+    color: #555;
+    line-height: 1.7;
+  }
+  .related-arrow {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 11.5px;
+    color: #1a1a1a;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 1px;
+  }
+
   /* === 問い合わせ === */
   .contact {
     margin-top: 30px;
@@ -345,6 +396,41 @@
   <li>パセオ「OUTLET対象商品（PDF）」には、2026年3月より既に OUTLET 価格へ移行している品番（約 218 品）が含まれます。ご案内が遅くなりましたことを深くお詫び申し上げます。</li>
   <li>掲載品番以外にも順次改定が発表される場合がございます。最新情報はお問い合わせください。</li>
 </ul>
+</div>
+
+<h2>あわせてご案内中の記事</h2>
+<div class="related-grid">
+
+  <a class="related-card" href="https://www.kobe-ribbon.co.jp/12491125171254012473653811248812500124831246312473/28-2026" target="_blank" rel="noopener">
+    <div class="related-label">展示会・内見会</div>
+    <div class="related-title">大地農園 第28回内見会 2026 大阪会場</div>
+    <div class="related-meta">
+      2026年6月4日(木) 〜 6月5日(金)<br>
+      マイドームおおさか 2F 展示ホールD
+      <br><span class="related-arrow">詳細を見る ▸</span>
+    </div>
+  </a>
+
+  <a class="related-card" href="https://kobe-ribbon.github.io/carnac-2026aw/" target="_blank" rel="noopener">
+    <div class="related-label">展示会・内見会</div>
+    <div class="related-title">2026 夏 関西展示会 主要3社まとめ<br><span style="font-size:12.5px; font-weight:400; color:#666;">shesay／友膳／CARNAC</span></div>
+    <div class="related-meta">
+      2026年6月8日(月) 〜 7月3日(金)<br>
+      船場センタービル ／ OMMビル（大阪3会場）
+      <br><span class="related-arrow">詳細を見る ▸</span>
+    </div>
+  </a>
+
+  <a class="related-card" href="https://www.kobe-ribbon.co.jp/12491125171254012473653811248812500124831246312473/april-27th-2026" target="_blank" rel="noopener">
+    <div class="related-label">展示会・内見会</div>
+    <div class="related-title">asca FAIR 2026 AW 大阪会場</div>
+    <div class="related-meta">
+      2026年6月17日(水) 〜 6月18日(木)<br>
+      大阪産業創造館 3F マーケットプラザ
+      <br><span class="related-arrow">詳細を見る ▸</span>
+    </div>
+  </a>
+
 </div>
 
 <div class="contact">
